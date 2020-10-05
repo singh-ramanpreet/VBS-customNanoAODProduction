@@ -1,11 +1,15 @@
 # VBS-customNanoAODProduction
 
+### Updated for NanoAOD v7
+
 ### Recipe for SM EWK and QCD production
 
 ```bash
-cmsrel CMSSW_10_2_18
+cmsrel CMSSW_10_2_22
+cd CMSSW_10_2_22/src
+cmsenv
 git cms-init
-git cms-merge-topic singh-ramanpreet:patch-lheHeader-10_2_18
+git cms-merge-topic singh-ramanpreet:patch-lheHeader-10_2_22
 git clone git@github.com:singh-ramanpreet/VBS-customNanoAODProduction.git VBSAnalysis
 scram b
 cd VBSAnalysis/NanoAODProduction/test

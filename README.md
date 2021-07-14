@@ -26,6 +26,7 @@ python submit.py
 
 ### 2016 SM EWK and QCD
 
+**Note**: Info for `dipoleRecoil` EWK sample is same as 2017/2018. 
 
 1. LHEScaleWeight
 

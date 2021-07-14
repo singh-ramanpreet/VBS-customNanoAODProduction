@@ -1,16 +1,22 @@
 from CRABClient.UserUtilities import config, getUsernameFromCRIC
 
 year = '2018'
-which_mc = 'sm'
+which_mc = 'ewk'
+#which_mc = 'qcd'
 #which_mc = 'aqgc'
 dryrun = True
 print_config = True
 just_print_config = True
 just_first_sample = False
 
-if which_mc == 'sm':
-    samples_list = 'samples%s.txt' % year
-    pset_file = 'nano_production_mc_%s_NANO.py' % year
+if which_mc == 'ewk':
+    samples_list = 'samples%s_EWK.txt' % year
+    pset_file = 'nano_production_mc_ewk_%s_NANO.py' % year
+    out_dataset_tag = 'VVjj_%sv7' % year
+
+elif which_mc == 'qcd':
+    samples_list = 'samples%s_QCD.txt' % year
+    pset_file = 'nano_production_mc_qcd_%s_NANO.py' % year
     out_dataset_tag = 'VVjj_%sv7' % year
 
 elif which_mc == 'aqgc':
